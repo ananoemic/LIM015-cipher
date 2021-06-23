@@ -2,13 +2,116 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>MENSAJERIA</title>  
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+  <div class="header-video">
+    <video src="mar video.mp4" muted autoplay loop></video>
+  </div>
+
+  <div id="main" class="main-container">
+
+    <div class="box-one"  id="register" >
+
+      <div id="fieldUsername" class="register">
+      <label class="label">Usuario</label>
+      <input class="input" id= "user" type="text" placeholder="escribe tu usuario">
+      </div>
+
+      <br>
+
+      <div id="fieldKey" class="register">
+      <label class="key">Key</label>
+      <select name= "offset" id="offset">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      </select>
+      </div>
+
+      <br>
+
+      <div id="fieldBottons" class="register">
+      <span id="back" class="boton"></span>
+      <span id="enter" class="boton">Entrar</span>
+      </div>
+
+      <br>
+
+      <div id="fieldConfirmation" class="register">
+      <p id="confirmationText"></p>
+      </div>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+    
+    <div class="box-two" id="exit" >
+      <button id ="exit1">EXIT</button>
+    </div>
+
+    <div class="box-three" id="root" >  
+    <h1>MENSAJERIA</h1>
+
+      <div id="fieldFunctions" class="root">
+      <button id= "cipher1" >Cifrar</button>
+      <button id= "cipher2">Descifrar</button>
+      </div>
+
+      <br>
+
+      <div id="fieldMessage" class="root">
+      <p id="welcomeText"></p>
+      </div>
+    </div>
+  </div> 
+
+<!-- 1 -->
+
+<div id="encrypt" class="second-container">
+<h1>Cifra tu mensaje aquí</h1>
+
+  <div id="cipherBox"><input id="cipherText" placeholder="escribe aqui">
+  <button id="cipher">Cifrar</button>
+  </div>
+
+  <div id="textBox">
+    <p id= "textEncrypted"></p>
+    <button id="copy">Copiar</button>
+  </div>
+
+</div>
+
+<!-- 2 -->
+
+<div id="encrypt2" class="third-container">
+<h1>Descifra tu mensaje aquí</h1>
+
+    <div id="cipher2Box"><input placeholder="escribe/pega aqui">
+      <button id="decipher">Descifrar</button>
+    </div>
+
+    <div id="text2Box">
+      <p id= "text2Encrypted"></p>
+      <button id="enviar">Enviar</button>
+    </div>
+</div>
+
+<div class="return" id="returnPage" >
+  <button id ="return" class="returnButton">REGRESAR PAGINA PRINCIPAL</button>
+</div>
+
+</body>
+
+<div id="container-footer">
+  <footer>
+    <h4>📶 Conectado con La Marina de Guerra del Perú</h4>
+  </footer>
+</div>
+
+  <script src="index.js" type="module"></script>
 </html>
