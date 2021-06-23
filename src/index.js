@@ -72,6 +72,5 @@ function cifrar() {
 }
 
 
-    
 
 // cipher.encode( offset , cipherText )
