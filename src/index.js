@@ -55,22 +55,12 @@ function returnBotton () {
 }
 
 
-document.getElementById('cipher').addEventListener('click', cifrar) 
+
+
+document.getElementById('cipher').addEventListener('click', cifrar);
 
 function cifrar() {
-    let cipherText = document.getElementById('cipherText');
-    // const offset = document.getElementById('offset').value; 
-    const encodeBox = document.getElementById('textEncrypted')
-    // console.log('funciona', offset, cipherText );
-    let encodeText = cipherText.value;
-    cipherText = cipher.encode( encodeText );
-    encodeBox.innerText = cipherText;
-
-    // const encodeText = cipher.encode(offset, encodeText);
-    // document.getElementById('cipherText').value = encodeText;
-
-}
-
-
-
-// cipher.encode( offset , cipherText )
+    const myText1 = document.getElementById('cipherText').value;
+    const offset = document.getElementById('offset').value;
+    const textEncode = cipher.encode( myText1, offset);
+ }

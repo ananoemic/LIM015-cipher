@@ -1,23 +1,24 @@
 const cipher = {
-    encode: function ( encodeText ) {
-        // console.log('encode', offset, text);
-        // const abc = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-        let finalString = "";
-
-        for (let i = 0; i <encodeText.length; i++) {
-            const letterPosition = encodeText.charCodeAt[i];
-            if (letterPosition>=65 && letterPosition<= 90) {
-                // let asciiNumber = ((upperText.charCodeAt(0)-65+offset)%26)+65;
-                finalString += String.fromCharCode((letterPosition-65+2)%26+65);
+    encode: function ( myText1 , offset ) {
+        let cesarText = '';
+        for ( let i = 0; i <myText1.length; i++ ) {
+            const text = myText1[i];
+            const letter = text.toUpperCase();
+            const numberLetter = letter.charCodeAt(0);
+            if (numberLetter>= 65 && numberLetter<=90){              
+                const cesar = (parseInt(numberLetter-65)+parseInt(offset))%26+65;
+                const ascii = String.fromCharCode(cesar);
+                cesarText += ascii;             
+                }                           
             }
-        
-        }   return finalString;
+            document.getElementById('textEncrypted').innerHTML = cesarText;
+        }
     }
 
-};
+        
 
     // decode: function (offset, text ) {
     //     console.log( 'decode', offset , text );
-   
+
 
 export default cipher;
