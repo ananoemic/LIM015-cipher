@@ -90,7 +90,7 @@ body {
 
     }
 
-#return {
+#return, #return2 {
     position:fixed;
     background: transparent;
     color: white;
@@ -105,7 +105,7 @@ body {
     right:0;
 
 }
-#return:hover {
+#return:hover, #return2:hover {
     background-color: white;
     color: black;
 }

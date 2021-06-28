@@ -45,22 +45,33 @@ function cipher2Botton () {
     document.getElementById('encrypt').style.display = 'none';
 }
 
-document.getElementById('return').addEventListener('click', returnBotton );
+
 
 function returnBotton () {
     document.getElementById('root').style.display = 'block';
-    document.getElementById('encrypt').style.display = 'none';
     document.getElementById('encrypt2').style.display = 'none';
-    document.getElementById('returnPage').style.display = 'none';
+}
+document.getElementById('return').addEventListener('click', returnBotton );
+
+function returnBotton2 () {
+    document.getElementById('root').style.display = 'block';
+    document.getElementById('encrypt').style.display = 'none';
 }
 
-
-
+document.getElementById('return2').addEventListener('click', returnBotton2);
 
 document.getElementById('cipher').addEventListener('click', cifrar);
 
 function cifrar() {
     const myText1 = document.getElementById('cipherText').value;
     const offset = document.getElementById('offset').value;
-    const textEncode = cipher.encode( myText1, offset);
+    cipher.encode( myText1, offset);
+ }
+
+ document.getElementById('decipher').addEventListener('click', decifrar);
+
+ function decifrar() {
+    const myText2= document.getElementById('decipherText').value;
+    const offset = document.getElementById('offset').value;
+    cipher.decode( myText2, offset);
  }
