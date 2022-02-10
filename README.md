@@ -2,7 +2,7 @@
 
 1.PROTOTIPO
 básico (pantallas del sitio web, funcionalidades)
-Prototipo de website, realizado por canva.com -> https://www.canva.com/design/
+Prototipo de baja fidelidad
 
 2.
 NOMBRE DEL PROYECTO:  MENSAJERÍA SECRETA Y SEGURA
